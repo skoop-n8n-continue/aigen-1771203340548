@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - Green Theme</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32; /* Dark Green */
+            --secondary-color: #4caf50; /* Medium Green */
+            --accent-color: #81c784; /* Light Green */
+            --background-color: #e8f5e9; /* Very Light Green */
+            --text-color: #1b5e20; /* Very Dark Green Text */
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--secondary-color);
+            margin-top: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
+
+        .quote-author {
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: block;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1rem;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .quote-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello World</h1>
+        
+        <div class="card">
+            <h2 style="margin-top: 0; color: var(--secondary-color);">Quote of the Day</h2>
+            <p class="quote-text">"Friendship is Love without his wings!"</p>
+            <span class="quote-author">- Lord Byron</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Green Theme Hello World</p>
+    </footer>
+
+</body>
+</html>
